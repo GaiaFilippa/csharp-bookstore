@@ -14,6 +14,8 @@ Individua il tipo corretto.
 Stampa poi in console l'informazione contenuta nella variabile.
 */
 
+using System;
+
 string titolo = "Clean Code";
 string autore = "Robert C. Martin";
 long ISBN = 9780132350884;
@@ -26,7 +28,26 @@ float valutazioneMediaLibro = 4.7f;
 int numeroDiRecensioni = 5413;
 string disponibileInVersioneKindle = "Sì";
 float prezzoVersioneKindle = 15.28f;
-string copertinaFlessibileDisponibile = "Sì";
+string disponibileCopertinaFlessibile = "Sì";
 float prezzoCopertinaFlessibile = 28.27f;
 
-
+Console.WriteLine();
+Console.WriteLine("---------------------------------------------------------");
+Console.WriteLine("Il libro presentato oggi è " + titolo + " di " + autore);
+Console.WriteLine("---------------------------------------------------------");
+Console.WriteLine();
+Console.WriteLine("Informazioni generiche:");
+Console.WriteLine();
+Console.WriteLine("ISBN: " + ISBN);
+Console.WriteLine("Numero Pagine: " + numeroPagine);
+Console.WriteLine("Peso del libro: " + pesoDelLibro + "g");
+Console.WriteLine("Dimensioni del libro: " + larghezzaLibro + "cm" + " x " + altezzaLibro + "cm" + " x " + profonditàLibro + "cm");
+Console.WriteLine();
+Console.WriteLine("Informazioni Amazon:");
+Console.WriteLine();
+Console.WriteLine("Numero recensioni: " + numeroDiRecensioni);
+Console.WriteLine("Valutazione media: " + valutazioneMediaLibro + "/5 stelline");
+Console.WriteLine("Kindle disponibile: " + disponibileInVersioneKindle + ", al prezzo di " + prezzoVersioneKindle + " euro");
+Console.WriteLine("Copertina flessibile disponibile: " + disponibileCopertinaFlessibile + ", al prezzo di " + prezzoCopertinaFlessibile + " euro");
+Console.WriteLine();
+Console.WriteLine("---------------------------------------------------------");
